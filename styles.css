@@ -76,6 +76,12 @@ header {
   background-color: #32aa26;
   font-weight: 600;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.inicio button:hover {
+  color: #32aa26;
+  background-color: #e9eaea;
 }
 
 .logo {

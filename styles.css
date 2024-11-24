@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
+/* Imagem de fundo*/
 .img-fundo {
   position: fixed;
   top: 0;
@@ -19,6 +19,7 @@
   opacity: 1;
 }
 
+/*Só um teste*/
 .teste {
   padding: 20px;
   margin: 0 auto;
@@ -34,6 +35,7 @@
 .teste p {
   font-size: 2rem;
 }
+/*Fim do teste*/
 
 /* Header */
 header {
@@ -48,6 +50,7 @@ header {
   width: 100%;
 }
 
+/*Começo Estilização do Inicio*/
 .inicio {
   font-size: 2rem;
   position: absolute;
@@ -83,7 +86,9 @@ header {
   color: #32aa26;
   background-color: #e9eaea;
 }
+/*Fim Estilização do Inicio*/
 
+/*Estilização titulo do cabeçalho*/
 .logo {
   font-size: 2rem;
   font-style: normal;
@@ -96,6 +101,7 @@ header {
   text-decoration: none;
 }
 
+/*Inicio da Estilização da navegação do cabeçalho*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -138,6 +144,7 @@ header {
 .nav-links a:hover {
   color: #3498db;
 }
+/*Fim da Estilização do cabeçalho*/
 
 /* Main */
 main {

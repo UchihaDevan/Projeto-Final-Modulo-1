@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+
 /* Imagem de fundo*/
 .img-fundo {
   position: fixed;
@@ -35,6 +36,7 @@
 .teste p {
   font-size: 2rem;
 }
+
 /*Fim do teste*/
 
 /* Header */
@@ -65,7 +67,7 @@ header {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 800;
   padding: 0.5rem;
-  
+
 }
 
 .inicio button {
@@ -86,6 +88,7 @@ header {
   color: #32aa26;
   background-color: #e9eaea;
 }
+
 /*Fim Estilização do Inicio*/
 
 /*Estilização titulo do cabeçalho*/
@@ -124,6 +127,7 @@ header {
   transition: color 0.3s ease-in-out;
   font-size: 1.3rem;
 }
+
 .nav-links ::before {
   content: "";
   position: absolute;
@@ -134,9 +138,11 @@ header {
   background: linear-gradient(90deg, #32aa26, #3d7bed);
   transition: width 0.4s ease-in-out;
 }
+
 .nav-links :hover::before {
   width: 100%;
 }
+
 .nav-links li a:hover {
   color: #f0a500;
 }
@@ -144,18 +150,62 @@ header {
 .nav-links a:hover {
   color: #3498db;
 }
+
 /*Fim da Estilização do cabeçalho*/
 
 /* Main */
 main {
   padding: 0;
-  padding-top: 40%; 
+  padding-top: 40%;
   margin: 0 auto;
-  
-  .textos p{
+
+  .textos p {
     font-size: 1.5rem;
     padding: 1rem;
   }
+}
+
+.form-section {
+  background-color: #ecf0f1;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.form-section h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background: #3498db;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #6fb0db;
 }
 
 /* Footer */

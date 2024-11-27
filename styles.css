@@ -24,8 +24,8 @@
 .teste {
   padding: 20px;
   margin: 0 auto;
-  background-color: #2c3e50;
-  color: #ffffff;
+  background-color: #ecf0f1;
+  color: #333333;
   text-align: center;
 }
 
@@ -69,6 +69,10 @@ header {
   padding: 0.5rem;
 
 }
+.inicio a{
+  text-decoration: none;
+  color: #ffffff;
+}
 
 .inicio button {
   font-size: 1.5rem;
@@ -80,11 +84,10 @@ header {
   text-transform: uppercase;
   background-color: #32aa26;
   font-weight: 600;
-  color: #ffffff;
   cursor: pointer;
 }
 
-.inicio button:hover {
+.inicio :hover {
   color: #32aa26;
   background-color: #e9eaea;
 }
@@ -150,7 +153,6 @@ header {
 .nav-links a:hover {
   color: #3498db;
 }
-
 /*Fim da Estilização do cabeçalho*/
 
 /* Main */
@@ -165,16 +167,24 @@ main {
   }
 }
 
+/*Inicio estilização do formulario*/
 .form-section {
   background-color: #ecf0f1;
   padding: 2rem;
-  border-radius: 10px;
-  margin-top: 2rem;
+  display: flex;
 }
 
 .form-section h2 {
   color: #2c3e50;
   margin-bottom: 1.5rem;
+  font-size: 2rem;
+  
+}
+
+.form {
+  margin-top: 2rem;
+  margin-left: 10rem;
+  margin-bottom: 2rem;
 }
 
 .form-group {
@@ -195,18 +205,91 @@ main {
 }
 
 .submit-btn {
-  background: #3498db;
-  color: #fff;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 5px;
+  font-size: 0.8rem;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease;
+  color: #32aa26;
+  background-color: #e9eaea;
 }
 
 .submit-btn:hover {
-  background: #6fb0db;
+  background-color: #32aa26;
+  color: #ffffff;
 }
+/*Final estilização do formulario*/
+
+/*Inicio estilização container de informações*/
+.info {
+  margin-left: 15rem;
+  background-color: #2c3e50;
+  width: 35%;
+  border-radius: 14px;
+  padding: 1.5rem;
+  
+}
+
+.email-contato a{
+  color: #ffffff;
+  font-size: 1.5rem;
+  position: absolute;
+  margin-left: 2rem;
+}
+.email-contato a:hover{
+  color: #32aa26;
+}
+
+.icon-email {
+  position: absolute;
+  margin-top: 0.3rem;  
+}
+
+.info h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.local {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}
+.local h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.local a{
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-left: 2rem;
+}
+.local a:hover{
+  color: #32aa26;
+}
+.icon-local {
+  position: absolute;
+  margin-top: 0.3rem;
+}
+.horarios h2{
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.horarios p{
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+.hora {
+  position: absolute;
+  margin-left: 14rem;
+  margin-top: -1.6rem;
+}
+
+/*Final estilização container de informações*/
 
 /* Footer */
 footer {

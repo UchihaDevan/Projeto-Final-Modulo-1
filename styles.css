@@ -170,6 +170,79 @@ main {
   }
 }
 
+.cursos-geral {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf0f1;
+  padding: .625rem 6rem;
+  gap: 0;
+}
+
+.curso1 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+
+.curso1 h6 {
+  font-size: .875rem;
+  letter-spacing: .0625rem;
+  font-weight: 600;
+  color:#32aa27;
+}
+
+.curso1 h3 {
+  font-size: 2rem;
+  letter-spacing: .0625rem;
+  font-weight: 700;
+  color:#020402;
+  margin-top: 1rem;
+}
+
+.curso1 p {
+  font-size: 1.125rem;
+  letter-spacing: .0625rem;
+  font-weight: 400;
+  color:#595959;
+  display: block;
+  margin-top: 1rem;
+}
+
+.curso1 a {
+  font-size: 1.125rem;
+  letter-spacing: .0625rem;
+  font-weight: 400;
+  color:#595959;
+  text-decoration: underline;
+  margin-top: 1rem;
+}
+
+.img-curso-geral {
+  display: flex;
+  position: relative; /* Para que a imagem possa ser posicionada absoluta dentro do contêiner */
+  width: 50%; /* Ou ajuste conforme o tamanho do contêiner */
+  height: 100%; /* Ajuste a altura conforme necessário */
+  overflow: hidden; /* Oculta qualquer parte da imagem que ultrapasse o contêiner */
+
+}
+
+.img-curso-geral img {
+  position: absolute; /* A imagem será posicionada dentro do contêiner */
+  top: 0;
+  left: 0;
+  width: 90%; /* A imagem ocupará toda a largura do contêiner */
+  height: 600px; /* A imagem ocupará toda a altura do contêiner */
+  object-fit: cover; /* Garante que a imagem cubra completamente o espaço sem distorção */
+  clip-path: inset(0 15%); /* Recorta a imagem nas laterais */
+  margin-top: 10rem;
+  margin-left: 6rem;
+  align-items: center;
+}
+
 /*Inicio estilização do formulario*/
 .form-section {
   background-color: #ecf0f1;

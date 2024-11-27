@@ -378,21 +378,21 @@ main {
   gap: 0;
 }
 
-.curso1 {
+.sobre-cursos {
   width: 40%;
   display: flex;
   flex-direction: column;
   margin-left: 3rem;
 }
 
-.curso1 h6 {
+.sobre-cursos h6 {
   font-size: .875rem;
   letter-spacing: .0625rem;
   font-weight: 600;
   color:#32aa27;
 }
 
-.curso1 h3 {
+.sobre-cursos h3 {
   font-size: 2rem;
   letter-spacing: .0625rem;
   font-weight: 700;
@@ -400,7 +400,7 @@ main {
   margin-top: 1rem;
 }
 
-.curso1 p {
+.sobre-cursos p {
   font-size: 1.125rem;
   letter-spacing: .0625rem;
   font-weight: 400;
@@ -409,7 +409,7 @@ main {
   margin-top: 1rem;
 }
 
-.curso1 a {
+.sobre-cursos a {
   font-size: 1.125rem;
   letter-spacing: .0625rem;
   font-weight: 400;
@@ -420,10 +420,10 @@ main {
 
 .img-curso-geral {
   display: flex;
-  position: relative; /* Para que a imagem possa ser posicionada absoluta dentro do contêiner */
-  width: 50%; /* Ou ajuste conforme o tamanho do contêiner */
-  height: 100%; /* Ajuste a altura conforme necessário */
-  overflow: hidden; /* Oculta qualquer parte da imagem que ultrapasse o contêiner */
+  position: relative;
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
 
 }
 
@@ -438,6 +438,47 @@ main {
   margin-top: 10rem;
   margin-left: 6rem;
   align-items: center;
+}
+
+.grade-cursos {
+  display: flex;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.curso1 {
+  margin-left: 0;
+  background-color: #ecf0f1;
+  background-size: cover;
+  width: 20rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+.curso1 img{
+  width: 70%;
+}
+.curso1 p {
+  color: #020402;
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.curso2 {
+
+}
+.curso2 img {
+
+}
+
+.curso3 {
+  width: 8rem;
+}
+.curso3 img {
+
 }
 
 /* Footer */

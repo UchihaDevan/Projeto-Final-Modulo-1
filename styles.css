@@ -8,6 +8,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 /* Imagem de fundo*/
 .img-fundo {
   position: fixed;
@@ -20,6 +21,23 @@
   background-position: center;
   z-index: -1;
   opacity: 1;
+}
+
+/*Só um teste*/
+.teste {
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #ecf0f1;
+  color: #333333;
+  text-align: center;
+}
+
+.teste h1 {
+  font-size: 4rem;
+}
+
+.teste p {
+  font-size: 2rem;
 }
 
 /*Fim do teste*/
@@ -52,7 +70,11 @@ header {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 800;
   padding: 0.5rem;
-  
+
+}
+.inicio a{
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .inicio button {
@@ -65,14 +87,14 @@ header {
   text-transform: uppercase;
   background-color: #32aa26;
   font-weight: 600;
-  color: #ffffff;
   cursor: pointer;
 }
 
-.inicio button:hover {
+.btn-inicio :hover {
   color: #32aa26;
   background-color: #e9eaea;
 }
+
 /*Fim Estilização do Inicio*/
 
 /*Estilização titulo do cabeçalho*/
@@ -111,6 +133,7 @@ header {
   transition: color 0.3s ease-in-out;
   font-size: 1.3rem;
 }
+
 .nav-links ::before {
   content: "";
   position: absolute;
@@ -121,9 +144,11 @@ header {
   background: linear-gradient(90deg, #32aa26, #3d7bed);
   transition: width 0.4s ease-in-out;
 }
+
 .nav-links :hover::before {
   width: 100%;
 }
+
 .nav-links li a:hover {
   color: #f0a500;
 }
@@ -136,14 +161,138 @@ header {
 /* Main */
 main {
   padding: 0;
-  padding-top: 40%; 
+  padding-top: 40%;
   margin: 0 auto;
-  
-  .textos p{
+
+  .textos p {
     font-size: 1.5rem;
     padding: 1rem;
   }
 }
+
+/*Inicio estilização do formulario*/
+.form-section {
+  background-color: #ecf0f1;
+  padding: 2rem;
+  display: flex;
+}
+
+.form-section h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  
+}
+
+.form {
+  margin-top: 2rem;
+  margin-left: 10rem;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  font-size: 0.8rem;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  color: #32aa26;
+  background-color: #e9eaea;
+}
+
+.submit-btn:hover {
+  background-color: #32aa26;
+  color: #ffffff;
+}
+/*Final estilização do formulario*/
+
+/*Inicio estilização container de informações*/
+.info {
+  margin-left: 15rem;
+  background-color: #2c3e50;
+  width: 35%;
+  border-radius: 14px;
+  padding: 1.5rem;
+  
+}
+
+.email-contato a{
+  color: #ffffff;
+  font-size: 1.5rem;
+  position: absolute;
+  margin-left: 2rem;
+}
+.email-contato a:hover{
+  color: #32aa26;
+}
+
+.icon-email {
+  position: absolute;
+  margin-top: 0.3rem;  
+}
+
+.info h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.local {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}
+.local h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.local a{
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-left: 2rem;
+}
+.local a:hover{
+  color: #32aa26;
+}
+.icon-local {
+  position: absolute;
+  margin-top: 0.3rem;
+}
+.horarios h2{
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.horarios p{
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+.hora {
+  position: absolute;
+  margin-left: 14rem;
+  margin-top: -1.6rem;
+}
+
+/*Final estilização container de informações*/
 
 .cursos-geral {
   width: 100%;
@@ -223,7 +372,6 @@ footer {
   background: #2c3e50;
   color: #ffffff;
   padding: 2rem;
-  margin-top: 1rem;
 }
 
 .footer-content {

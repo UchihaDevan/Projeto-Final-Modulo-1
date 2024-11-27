@@ -72,7 +72,8 @@ header {
   padding: 0.5rem;
 
 }
-.inicio a{
+
+.inicio a {
   text-decoration: none;
   color: #ffffff;
 }
@@ -156,6 +157,7 @@ header {
 .nav-links a:hover {
   color: #3498db;
 }
+
 /*Fim da Estilização do cabeçalho*/
 
 /* Main */
@@ -172,76 +174,84 @@ main {
 
 .cursos-geral {
   width: 100%;
-  height: 130vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ecf0f1;
-  padding: .625rem 6rem;
-  gap: 0;
+  padding: 2rem 6rem;
+  gap: 2rem;
 }
 
-.curso1 {
-  width: 40%;
+.curso-conteudo {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  margin-left: 3rem;
+  justify-content: center;
+  padding-right: 2rem;
 }
 
-.curso1 h6 {
-  font-size: .875rem;
-  letter-spacing: .0625rem;
+.curso-subtitulo {
+  font-size: 0.875rem;
+  letter-spacing: 0.0625rem;
   font-weight: 600;
-  color:#32aa27;
+  color: #32aa27;
+  text-transform: uppercase;
 }
 
-.curso1 h3 {
-  font-size: 2rem;
-  letter-spacing: .0625rem;
+.curso-titulo {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.0625rem;
   font-weight: 700;
-  color:#020402;
+  color: #020402;
   margin-top: 1rem;
 }
 
-.curso1 p {
+.curso-descricao {
   font-size: 1.125rem;
-  letter-spacing: .0625rem;
+  line-height: 1.6;
+  letter-spacing: 0.0625rem;
   font-weight: 400;
-  color:#595959;
-  display: block;
+  color: #595959;
   margin-top: 1rem;
 }
 
-.curso1 a {
+.curso-contato {
+  max-width: fit-content;
   font-size: 1.125rem;
-  letter-spacing: .0625rem;
-  font-weight: 400;
-  color:#595959;
-  text-decoration: underline;
-  margin-top: 1rem;
+  letter-spacing: 0.0625rem;
+  font-weight: 600;
+  color: #32aa27;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #32aa27;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
-.img-curso-geral {
+.curso-contato:hover {
+  background-color: #32aa27;
+  color: #ffffff;
+}
+
+.curso-imagem {
+  width: 50%;
   display: flex;
-  position: relative; /* Para que a imagem possa ser posicionada absoluta dentro do contêiner */
-  width: 50%; /* Ou ajuste conforme o tamanho do contêiner */
-  height: 100%; /* Ajuste a altura conforme necessário */
-  overflow: hidden; /* Oculta qualquer parte da imagem que ultrapasse o contêiner */
-
-}
-
-.img-curso-geral img {
-  position: absolute; /* A imagem será posicionada dentro do contêiner */
-  top: 0;
-  left: 0;
-  width: 90%; /* A imagem ocupará toda a largura do contêiner */
-  height: 600px; /* A imagem ocupará toda a altura do contêiner */
-  object-fit: cover; /* Garante que a imagem cubra completamente o espaço sem distorção */
-  clip-path: inset(0 15%); /* Recorta a imagem nas laterais */
-  margin-top: 10rem;
-  margin-left: 6rem;
+  justify-content: center;
   align-items: center;
 }
+
+.curso-imagem img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 
 /*Inicio estilização do formulario*/
 .form-section {
@@ -254,7 +264,7 @@ main {
   color: #2c3e50;
   margin-bottom: 1.5rem;
   font-size: 2rem;
-  
+
 }
 
 .form {
@@ -297,6 +307,7 @@ main {
   background-color: #32aa26;
   color: #ffffff;
 }
+
 /*Final estilização do formulario*/
 
 /*Inicio estilização container de informações*/
@@ -306,22 +317,23 @@ main {
   width: 35%;
   border-radius: 14px;
   padding: 1.5rem;
-  
+
 }
 
-.email-contato a{
+.email-contato a {
   color: #ffffff;
   font-size: 1.5rem;
   position: absolute;
   margin-left: 2rem;
 }
-.email-contato a:hover{
+
+.email-contato a:hover {
   color: #32aa26;
 }
 
 .icon-email {
   position: absolute;
-  margin-top: 0.3rem;  
+  margin-top: 0.3rem;
 }
 
 .info h2 {
@@ -335,30 +347,37 @@ main {
   margin-top: 5rem;
   font-size: 1.5rem;
 }
+
 .local h2 {
   color: #ffffff;
   font-size: 1.5rem;
 }
-.local a{
+
+.local a {
   color: #ffffff;
   font-size: 1.3rem;
   margin-left: 2rem;
 }
-.local a:hover{
+
+.local a:hover {
   color: #32aa26;
 }
+
 .icon-local {
   position: absolute;
   margin-top: 0.3rem;
 }
-.horarios h2{
+
+.horarios h2 {
   margin-top: 2rem;
   font-size: 1.5rem;
 }
-.horarios p{
+
+.horarios p {
   color: #ffffff;
   font-size: 1.3rem;
 }
+
 .hora {
   position: absolute;
   margin-left: 14rem;
@@ -366,79 +385,6 @@ main {
 }
 
 /*Final estilização container de informações*/
-
-.cursos-geral {
-  width: 100%;
-  height: 130vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ecf0f1;
-  padding: .625rem 6rem;
-  gap: 0;
-}
-
-.curso1 {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  margin-left: 3rem;
-}
-
-.curso1 h6 {
-  font-size: .875rem;
-  letter-spacing: .0625rem;
-  font-weight: 600;
-  color:#32aa27;
-}
-
-.curso1 h3 {
-  font-size: 2rem;
-  letter-spacing: .0625rem;
-  font-weight: 700;
-  color:#020402;
-  margin-top: 1rem;
-}
-
-.curso1 p {
-  font-size: 1.125rem;
-  letter-spacing: .0625rem;
-  font-weight: 400;
-  color:#595959;
-  display: block;
-  margin-top: 1rem;
-}
-
-.curso1 a {
-  font-size: 1.125rem;
-  letter-spacing: .0625rem;
-  font-weight: 400;
-  color:#595959;
-  text-decoration: underline;
-  margin-top: 1rem;
-}
-
-.img-curso-geral {
-  display: flex;
-  position: relative; /* Para que a imagem possa ser posicionada absoluta dentro do contêiner */
-  width: 50%; /* Ou ajuste conforme o tamanho do contêiner */
-  height: 100%; /* Ajuste a altura conforme necessário */
-  overflow: hidden; /* Oculta qualquer parte da imagem que ultrapasse o contêiner */
-
-}
-
-.img-curso-geral img {
-  position: absolute; /* A imagem será posicionada dentro do contêiner */
-  top: 0;
-  left: 0;
-  width: 90%; /* A imagem ocupará toda a largura do contêiner */
-  height: 600px; /* A imagem ocupará toda a altura do contêiner */
-  object-fit: cover; /* Garante que a imagem cubra completamente o espaço sem distorção */
-  clip-path: inset(0 15%); /* Recorta a imagem nas laterais (25% da esquerda e direita) */
-  margin-top: 10rem;
-  margin-left: 6rem;
-  align-items: center;
-}
 
 /* Footer */
 footer {
@@ -477,6 +423,21 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+  }
+
+  .cursos-geral {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .curso-conteudo,
+  .curso-imagem {
+    width: 100%;
+    text-align: center;
+  }
+
+  .curso-imagem {
+    margin-top: 2rem;
   }
 
   .footer-content {

@@ -87,7 +87,7 @@ header {
   cursor: pointer;
 }
 
-.inicio :hover {
+.btn-inicio :hover {
   color: #32aa26;
   background-color: #e9eaea;
 }
@@ -296,7 +296,6 @@ footer {
   background: #2c3e50;
   color: #ffffff;
   padding: 2rem;
-  margin-top: 1rem;
 }
 
 .footer-content {

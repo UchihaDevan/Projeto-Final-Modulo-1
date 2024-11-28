@@ -357,6 +357,7 @@ main {
   background-color: #ecf0f1;
   padding: 2rem;
   display: flex;
+  justify-content: center;
 }
 
 .form-section h2 {
@@ -368,7 +369,6 @@ main {
 
 .form {
   margin-top: 2rem;
-  margin-left: 10rem;
   margin-bottom: 2rem;
 }
 
@@ -552,7 +552,7 @@ footer a {
 }
 
 .social-links a:hover {
-  color: #3498db;
+  color: #32aa26;
 }
 
 /* Responsive Design */

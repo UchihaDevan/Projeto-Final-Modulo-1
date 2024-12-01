@@ -38,61 +38,61 @@ main {
     background-color: #ecf0f1;
 }
 
+/*Estilização titulo do cabeçalho*/
 .logo a{
-    font-size: 2rem;
-    font-style: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 900;
-    margin: 0 auto;
-    line-height: 1;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-decoration: none;
+  font-size: 2rem;
+  font-style: normal;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  margin-left: -10%;
+  line-height: 1;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /*Inicio da Estilização da navegação do cabeçalho*/
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .nav-links {
-    display: flex;
-    gap: 2rem;
-    margin-right: 0%;
+  display: flex;
+  gap: 2rem;
 }
 
 .nav-links a {
-    max-width: 100%;
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    color: #fafafa;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-    font-size: 1.3rem;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  color: #fafafa;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  font-size: 1.3rem;
 }
 
 .nav-links ::before {
-    content: "";
-    position: absolute;
-    width: 0px;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background: linear-gradient(90deg, #6e3482, #6e3482);
-    transition: width 0.4s ease-in-out;
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: linear-gradient(90deg, #6e3482, #6e3482);
+  transition: width 0.4s ease-in-out;
 }
 
 .nav-links :hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 .nav-links a:hover {
-    color: #6e3482;
+  color: #6e3482;
 }
 
 .principal {
@@ -107,6 +107,7 @@ main {
     margin-top: 4rem;
     height: 300px;
     object-fit: cover;
+    object-position: 25%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.454);
 }
 
@@ -177,7 +178,7 @@ footer {
         margin: 0 auto;
         text-align: center;
     }
-    
+
     .navbar {
         display: grid;
         flex-direction: column;
@@ -208,7 +209,7 @@ footer {
         margin-top: 3%;       
     }
     .sobre-curso h2, p {
+        padding-left: 0;
         align-items: center;
-        text-align: center;
     }
 }

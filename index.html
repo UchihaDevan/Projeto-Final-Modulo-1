@@ -13,11 +13,16 @@
     <header>
         <nav class="navbar">
             <div class="logo"><a href="index.html">Capacita Brasil</a></div>
-            <div class="nav-links">
-                <a href="#inicio">Início</a>
-                <a href="#sobre">Sobre</a>
-                <a href="cursos.html">Cursos</a>
-                <a href="#contato">Contato</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
         </nav>
     </header>
@@ -59,17 +64,20 @@
                 </div>
                 <div class="servicos-cursos">
                     <div class="curso1">
-                        <img src="imgs/3cc8801c-a9e6-11ef-91de-0242ac110002-jpg-regular_image.jpeg" alt="" loading="lazy">
+                        <img src="imgs/3cc8801c-a9e6-11ef-91de-0242ac110002-jpg-regular_image.jpeg" alt=""
+                            loading="lazy">
                         <h3><a href="cursos.html">Cursos online de programação ></a></h3>
                         <p>Aprimore suas habilidades com nossos cursos abrangentes de programação.</p>
                     </div>
                     <div class="curso1">
-                        <img src="imgs/3c81260e-a9e6-11ef-91de-0242ac110002-jpg-regular_image.jpeg" alt="" loading="lazy">
+                        <img src="imgs/3c81260e-a9e6-11ef-91de-0242ac110002-jpg-regular_image.jpeg" alt=""
+                            loading="lazy">
                         <h3><a href="instrutores.html">Instrutores especialistas ></a></h3>
                         <p>Aprenda com profissionais do setor e aprimore seu conhecimento.</p>
                     </div>
                     <div class="curso1">
-                        <img src="imgs/3c38f26c-a9e6-11ef-91de-0242ac110002-jpg-regular_image.jpeg" alt="" loading="lazy">
+                        <img src="imgs/3c38f26c-a9e6-11ef-91de-0242ac110002-jpg-regular_image.jpeg" alt=""
+                            loading="lazy">
                         <h3><a href="plataforma.html">Plataforma amigável ></a></h3>
                         <p>Navegue facilmente pela nossa plataforma intuitiva de aprendizagem online.</p>
                     </div>
@@ -89,7 +97,8 @@
                     <label for="email">E-mail</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                <a href="" target="_blank"><button type="submit" value="submit" class="submit-btn">Enviar Inscrição</button></a>
+                <a href="" target="_blank"><button type="submit" value="submit" class="submit-btn">Enviar
+                        Inscrição</button></a>
             </form>
             <div class="info">
                 <div>
@@ -119,16 +128,19 @@
         <div class="footer-content">
             <div>
                 <h3>Contato</h3>
-                <p>Telefone: (85) 1234-5678</p>
-                <p>Email: <a href="mailto:contato@capacitabrasil.com.br">contato@capacitabrasil.com.br</a></p>
+                <div class="contatos">
+                    <p class="telefone">Telefone: <a>(85) 99160-9875</a></p>
+                    <p>Email: <a href="mailto:dervanuchira@gmail.com">dervanuchira@gmail.com</a></p>
+                </div>
             </div>
             <div>
                 <h3>Redes Sociais</h3>
                 <div class="social-links">
-                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://github.com/UchihaDevan" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/404_devan_" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/dervando-gomes-9b9ab218a/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/5585991609875" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             <div>
@@ -138,6 +150,13 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>

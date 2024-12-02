@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #49225b;
+    padding: 1.6rem;
+    width: 100%;
+    z-index: 100;
+    border-radius: 0 0 14px 14px;
+}
+
+/* Estilização do título do cabeçalho */
+.logo a {
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Estilização da navegação do cabeçalho */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: #fafafa;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-size: 1.3rem;
+}
+
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(90deg, #6e3482, #6e3482);
+    transition: width 0.4s ease-in-out;
+}
+
+.nav-links a:hover::before {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #6e3482;
+}
+
+/* Menu hamburguer */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.menu-icon .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Main */
+main {
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.agradecimento {
+    text-align: center;
+    margin: 0 auto;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+.agradecimento h2 {
+    font-size: 2rem;
+    color: #49225b;
+}
+
+.agradecimento p {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding-top: 1.3rem;
+    max-width: 70%;
+}
+
+/* Estilização do Rodapé */
+footer {
+    text-align: center;
+    margin: 0 auto;
+    background-color: #49225b;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 14px;
+    width: 70%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.557);
+}
+
+footer .telefone {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer .contatos {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-links {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: #6e3482;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #e9eaea;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .navbar {
+        margin: 0 auto;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0.6rem;
+    }
+
+    .logo a {
+        font-size: 1.8rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+    }
+
+    /* Menu hamburguer */
+    .menu-icon {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .agradecimento p {
+        font-size: 1.2rem;
+        max-width: 90%;
+    }
+
+    footer {
+        padding: 1.5rem;
+        border-radius: 8px;
+        width: 90%;
+    }
+
+    .social-links {
+        font-size: 1.5rem;
+    }
+
+    /* Estilos para o menu hamburguer */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #49225b;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .menu-icon .bar {
+        width: 35px;
+        height: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 1.6rem;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}

@@ -43,6 +43,7 @@ header {
   z-index: 100;
   top: 0;
   left: 0;
+  border-radius: 0 0 14px 14px;
 }
 
 /*Estilização titulo do cabeçalho*/
@@ -100,6 +101,22 @@ header {
 
 .nav-links a:hover {
   color: #6e3482;
+}
+
+/* Estilos do ícone do menu */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.menu-icon .bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
 }
 
 /*Fim da Estilização do cabeçalho*/
@@ -280,6 +297,8 @@ main {
   background-color: #ffffff;
   padding: 2rem 1rem;
   justify-content: center;
+  margin: 0 auto;
+  width: 70%;
 }
 
 /* Estilização do card de curso */
@@ -410,7 +429,7 @@ main {
 }
 
 .email-contato a:hover {
-  color: #6e3482;
+  color: #49225b;
 }
 
 .icon-email {
@@ -442,7 +461,7 @@ main {
 }
 
 .local a:hover {
-  color: #6e3482;
+  color: #49225b;
 }
 
 .icon-local {
@@ -493,9 +512,16 @@ footer a:hover {
 }
 
 @media (max-width: 1200px) {
+
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    margin: 0 auto;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.6rem;
+
+    .logo {
+      margin-left: 7%;
+    }
   }
 
   .logo a {
@@ -506,6 +532,7 @@ footer a:hover {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 1rem;
+    list-style-type: none;
   }
 
   .nav-links a {
@@ -535,9 +562,12 @@ footer a:hover {
     max-width: 100%;
   }
 
-  .cabecalho-cursos h2 {
+  .cabecalho-cursos h2, h5 {
     font-size: 1.8rem;
     text-align: center;
+    margin: 0 auto;
+    gap: 1rem;
+    margin-top: 1rem;
   }
 
   .servicos-cursos {
@@ -553,8 +583,14 @@ footer a:hover {
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    margin: 0 auto;
     align-items: center;
+    gap: 1.5rem;
+    padding: 0.6rem;
+
+    .logo {
+      margin-left: 7%;
+    }
   }
 
   .nav-links {
@@ -593,6 +629,7 @@ footer a:hover {
   }
 
   .curso1 {
+    width: 500px;
     flex: 1 1 100%;
     max-width: 100%;
   }
@@ -680,5 +717,29 @@ footer a:hover {
   .local a,
   .horarios p {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+    list-style-type: none;
+    border-radius: 10px;
+    background-color: #49225b;
+  }
+
+  .menu-icon {
+    display: flex;
   }
 }
